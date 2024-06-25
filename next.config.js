@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  // Add other configuration options here as needed
+    api: {
+        bodyParser: false,
+      },
 }
 
-module.exports = nextConfig;
+module.exports = {
+    images: {
+        domains: ['cloud.appwrite.io'],
+    },
+    reactStrictMode: false,
 
-  
+}
